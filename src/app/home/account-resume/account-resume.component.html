@@ -1,0 +1,20 @@
+<div class="account-wrapper">
+  <div class="content">
+    <div class="info-set">
+      <p>
+        <strong>Nome</strong>
+      </p>
+      <p>{{ name }}</p>
+    </div>
+    <div class="info-set">
+      <p>
+        <strong>Agência</strong>
+      </p>
+      <p>{{ agency }}</p>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="default-btn" [routerLink]="['conta', account]">Editar</button>
+    <button class="default-btn" (click)="handleDelete()">Deletar</button>
+  </div>
+</div>

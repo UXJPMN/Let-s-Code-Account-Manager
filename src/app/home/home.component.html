@@ -1,0 +1,15 @@
+<div class="home-wrapper">
+  <h1 class="page-title">Lista de Contas</h1>
+  <div class="account-list">
+    <app-account-resume
+      *ngFor="let account of accountList"
+      [name]="account.name"
+      [agency]="account.agency"
+      [account]="account.account"
+      (deleteAccount)="handleDelete($event)"
+    ></app-account-resume>
+  </div>
+  <button class="default-btn create-btn" routerLink="criar">
+    Criar Conta
+  </button>
+</div>

@@ -1,0 +1,26 @@
+.account-wrapper {
+  margin-bottom: 32px;
+  background: #E1E2E1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-radius: 16px;
+
+  > .content {
+    width: fit-content;
+
+    > .info-set {
+      margin: 8px 0;
+    }
+  }
+
+  > .actions {
+    width: fit-content;
+
+    > .default-btn {
+      margin-left: 16px;
+    }
+  }
+}
