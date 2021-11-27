@@ -8,6 +8,7 @@ import { CreateAccountComponent } from './create-account/create-account.componen
 import { AccountDetailsComponent } from './account-details/account-details.component';
 import { HeaderComponent } from './header/header.component';
 import { AccountResumeComponent } from './home/account-resume/account-resume.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { AccountResumeComponent } from './home/account-resume/account-resume.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

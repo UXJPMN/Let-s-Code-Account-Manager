@@ -1,1 +1,20 @@
-<p>create-account works!</p>
+<div class="create-wrapper">
+  <h1 class="page-title">Criar Nova Conta</h1>
+  <form [formGroup]="createAccountForm" (ngSubmit)="handleSubmit($event)">
+    <fieldset>
+      <label for="name">Nome: </label>
+      <input required type="text" id="name" formControlName="name">
+    </fieldset>
+    <fieldset>
+      <label for="agency">Agência: </label>
+      <input required type="number" id="agency" formControlName="agency">
+    </fieldset>
+    <fieldset>
+      <label for="funds">Saldo: </label>
+      <input type="number" id="funds" formControlName="funds">
+    </fieldset>
+    <button type="submit" [disabled]="createAccountForm.invalid">
+      Criar conta
+    </button>
+  </form>
+</div>

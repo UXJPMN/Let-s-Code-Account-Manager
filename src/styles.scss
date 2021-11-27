@@ -13,6 +13,10 @@ html, body, * {
   padding: 48px;
 }
 
+fieldset {
+  border: none;
+}
+
 .page-title {
   font-size: 48px;
   font-weight: bold;

@@ -1,1 +1,42 @@
-<p>account-details works!</p>
+<div class="details-wrapper">
+  <h1 class="page-title">Detalhes da Conta:</h1>
+  <div class="content">
+    <div class="user-data">
+      <div class="data-set">
+        <p>
+          <strong>Nome:</strong>
+        </p>
+        <p>{{ name }}</p>
+      </div>
+      <div class="data-set">
+        <p>
+          <strong>Agência:</strong>
+        </p>
+        <p>{{ agency }}</p>
+      </div>
+      <div class="data-set">
+        <p>
+          <strong>Conta:</strong>
+        </p>
+        <p>{{ account }} {{ digit }}</p>
+      </div>
+      <div class="data-set">
+        <p>
+          <strong>Saldo:</strong>
+        </p>
+        <p>{{ funds }}</p>
+      </div>
+    </div>
+    <div class="user-actions">
+      <fieldset>
+        <label for="transactionInput">Valor: </label>
+        <input type="number" id="transactionInput" [(ngModel)]="transactionInput">
+      </fieldset>
+      <div class="action-btns">
+        <button class="default-btn" (click)="removeMoney()">Sacar</button>
+        <button class="default-btn" (click)="addMoney()">Depositar</button>
+      </div>
+    </div>
+    <p>{{ errorMessage }}</p>
+  </div>
+</div>
