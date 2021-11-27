@@ -1,0 +1,29 @@
+.details-wrapper {
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+
+  .page-title {
+    margin-bottom: 48px;
+  }
+
+  strong {
+    font-size: 24px;
+  }
+
+  .data-set {
+    margin-bottom: 16px;
+  }
+
+  .content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .action-btns {
+    > .default-btn {
+      margin-right: 16px;
+    }
+  }
+}

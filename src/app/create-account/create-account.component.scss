@@ -1,4 +1,9 @@
 .create-wrapper {
+  max-width: 480px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+
   > h1 {
     margin-bottom: 32px;
   }

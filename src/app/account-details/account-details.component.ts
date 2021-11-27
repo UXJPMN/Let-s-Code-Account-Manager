@@ -50,12 +50,14 @@ export class AccountDetailsComponent implements OnInit {
 
   async addMoney() {
     const response = await this.accountService.moneyTransaction(this.id, this.transactionInput);
+    this.transactionInput = 0;
 
     this.finishTransaction(response);
   }
 
   async removeMoney() {
     const response = await this.accountService.moneyTransaction(this.id, (this.transactionInput * -1));
+    this.transactionInput = 0;
 
     this.finishTransaction(response);
 
